@@ -1,0 +1,698 @@
+/*   Author: University of Phoenix
+	 Date:	 01/10/11
+	 This is a copy of Kudler's css for the site presentation.  B-Team added the marked
+	 section for the store.	 
+*/
+	 
+
+
+/* basic elements */
+
+body
+{
+	font: 10pt arial;
+	color: #fff;
+	background: #fff url(../images/pageBG.jpg) repeat top center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	
+}
+
+.logomap
+{
+	margin-top: 10px;
+	border-style: none;
+}
+
+td
+{
+	font: 10pt/16pt arial;
+	margin-top: 0;
+}
+
+p
+{
+	font: 10pt/16pt arial;
+	margin-top: 0;
+}
+ul
+{
+	list-style-type: disc;
+}
+ol.n
+{
+	text-align: left;
+	font: 10pt/16pt arial;
+	color: #ccc;
+	margin-top: 0;
+	outline: #fff thick;	
+}
+ol.a
+{
+	list-style-type: upper-alpha;
+}
+ol.i
+{
+	list-style-type: inherit;
+}
+ol li
+{
+	margin-left: 50px;
+	padding: 4px 25px 0 8px;
+}
+
+
+ul li
+{
+	margin-left: 50px;
+	padding: 4px 25px 0 8px;
+}
+.form
+{
+	font: 11px arial;
+	font-weight: bold;
+}
+a:link
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-variant: normal;
+}
+a:visited
+{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover, a:active
+{
+	text-decoration: underline;
+	font-variant: normal;
+	color: #999;
+}
+
+/* specific divs */
+#container
+{
+	width: 100%;
+	
+}
+
+#contentContainer
+{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto	
+}
+
+#metaLinks
+{
+	width: 150px;
+	height: 28px;
+	margin: 0 50px 0 auto;
+	padding-top: 12px;
+	text-align: right;
+	font: 10pt arial;
+	color: #000000;
+}
+
+#metaLinks a
+{
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#metaLinks a:hover
+{
+	text-decoration: underline;
+}
+
+#header
+{
+	height: 150px;
+	padding: 0;
+	margin: 0;
+	background: url(../images/top.jpg) no-repeat top right;
+}
+
+#header h1
+{
+	display: none;
+}
+
+.em-current
+{
+	font-weight: bold;
+	font-style: italic;
+}
+.em-current-colored
+{
+	font-weight: bold;
+	font-style: italic;
+	color: #AF7964;
+}
+.ingredients
+{
+	text-align: left;
+}
+.sub-header
+{
+	color: #AF7964;
+	font: 12pt/14pt Times New Roman;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 20px 10px 20px;
+}
+.sub-header-read
+{
+	color: #AF7964;
+	font: 10pt Times New Roman;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 20px 10px 20px;
+}
+.sub-header-centered
+{
+	color: #AF7964;
+	font: 12pt/14pt Times New Roman;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+/* contact Advisor Button */
+
+
+#slideshow
+{
+    height: 300px;
+    width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#slideshow a
+{
+    height: 300px;
+    width: 900px;
+}
+
+#slideshow img
+{
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+#contactButton span
+{
+	display: none;
+}
+
+
+/* adjusts contact button height for Internet Explorer */
+/*\*/
+* html #flash
+{
+	top: 187px;
+}
+/**/
+
+
+#pageTitle
+{
+	position: absolute;
+	top: 215px;
+	left: 300px;
+	width: 250px;
+	height: 41px;
+}
+#pageTitle h1
+{
+	color: #f5ac00;
+	font: 16pt arial;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+/* Logo */
+#logo
+{
+	position: absolute;
+	top: 45px;
+	left: 15px;
+	width: 228px;
+	height: 117px;
+	background: url(../images/logo.jpg) no-repeat top left;
+}
+#logo span
+{
+	display: none;
+}
+
+/* Navigation */
+#nav, 
+.nav-home, 
+#main-content
+{
+	width: 750px;
+	margin-left: auto;	
+	margin-right: auto;
+	background-color: #000;		
+	
+}
+
+#nav
+{
+	height: 30px;
+	padding-top: 8px;
+	color: #fff;
+	font: 11px arial;
+	text-align: center;
+}
+
+p.nav
+{
+	margin: 0;
+}
+
+#nav a:hover
+{
+	color: #ccc;
+}
+
+#nav a:active
+{
+	color: #fff;
+}
+
+.nav-home
+{
+	margin-bottom: 0;
+	padding-top: 20px;
+	text-align: center;
+}
+
+ul li
+{
+	padding-right: 25px;
+}
+
+/* Main body content */
+#main
+{
+	margin: 0;
+}
+
+/* adjusts min-height for Internet Explorer */
+/*\*/
+* html #main
+{
+	height: 480px;
+}
+/**/
+
+#content
+{
+
+}
+
+
+#mapContent
+{
+	text-align: center;
+	margin-left: 0;
+}
+/* adjusts min-height for Internet Explorer */
+/*\*/
+* html #content
+{
+	height: 480px;
+}
+/**/
+
+#content h1
+{
+	color: #f5ac00;
+	font: 12pt/16pt arial;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 0 6px 20px;
+}
+#content h2
+{
+	color: #ccc;
+	font: 11pt/16pt arial;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 0 6px 20px;
+}
+#content h3.spacing
+{
+	color: #AF7964;
+	font: 14pt/16pt arial;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 20px 0 20px;
+}
+
+/***************************************************/
+/* This section was added by B-Team for the store. */
+/***************************************************/
+#content h3
+{
+	color: #AF7964;
+	font: 14pt/16pt arial;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+#content h3.centerheader
+{
+	color: #AF7964;
+	font: 14pt/16pt arial;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+
+
+
+#content ul.indent li, .store_nav
+{
+	margin-left: 25px;
+	list-style-type: square;
+	color: #ccc;	
+}
+
+#left_panel{
+	padding: 50px 0 50px 0;
+	width: 20%;
+	float: left;	
+	background-color: #000;	
+}
+
+#right_panel{
+	padding: 20px 0 50px 0;
+	width: 80%;
+	margin-left: 20%;
+	background-color: #000;
+	min-height: 400px;
+}
+
+#message_panel{	padding-top: 20px;}
+
+
+
+#left_panel a, .nav_head, .item_head{ 	
+	color: #000;
+	font-weight: bold;
+	font-size: 12px;
+ }
+ 
+.store_item{ margin: 10px 50px 10px 50px; padding: 10px; border-bottom: 1px solid;}
+
+
+.nav_head {margin: 10px; text-align: center; padding: 5px 0 5px 0; background-color: #AF7964; border: #503429 1px solid;}
+
+.item_head{ clear: right; text-align: center; background-color: #E3D0C8; border: #503429 1px solid; margin: 0 30px 0 30px; padding: 5px 0 5px 0;}
+#meat, #bakery, #produce, #dairy{display: none; padding: 5px 0 5px 5px; text-align: left; border: #503429 1px solid; background-color: #E3D0C8;} 
+
+/* panels for the store */
+#bakery_panel, #meat_panel, #produce_panel, #dairy_panel { display: none;}
+#croissant, #fruit-tart, #flat-bread, #table-loaves {display: none;}
+#beef, #lamb, #poultry, #seafood {display: none;} 
+#fruits, #vegetables, #herbs{display: none;} 
+#cheddar, #colby, #swiss, #specialty, #items, #cart {display: none;} 
+
+
+
+/***************************************************/
+/*                 End of added section            */
+/***************************************************/
+ 
+#content hr
+{
+	height: 0;
+	border: solid #999999 0;
+	border-top-width: 1px;
+}
+#content p.spacing
+{
+	font: 10pt/16pt arial;
+	padding: 0 20px 0 20px;
+	margin-top: 0;
+	outline: #fff thick;
+}
+
+#content p.spacing2
+{
+	font: 10pt/16pt arial;
+	padding: 0 20px 0 55px;
+	margin-top: 0;
+	outline: #fff thick;
+}
+#content legend
+{
+	color: #ffffff;
+	width: 5px;
+}
+#content span
+{
+	font: 10px arial;
+}
+#content img
+{
+	padding: 0 0 0 0;
+}
+
+#content input, #content select
+{
+	font: 10px arial;
+}
+#content a:link
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+}
+
+#content a:visited
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #fff;
+}
+#content a:hover, a:active
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #fff;
+}
+
+#footer
+{
+	width: 980px;
+	height: 63px;
+	background: url(../images/footerBG2.jpg) no-repeat top left;
+	clear: both;
+}
+#footer p
+{
+	font: 8pt/14pt arial;
+	color: #000000;
+	padding: 5px 0 0 50px;
+	text-align: center;
+}
+#footer a:link
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+#footer a:visited
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+}
+#footer a:hover, a:active
+{
+	font-weight: normal;
+	text-decoration: none;
+	color: #AF7964;
+}
+/* Degree Program styles */
+#content p.headingLarge
+{
+	/*Program Name */
+	color: #000000;
+	font: 10pt/16pt arial;
+	font-weight: bold;
+}
+#content p.heading
+{
+	color: #000000;
+	font: 10pt/16pt arial;
+	font-weight: bold;
+}
+#content p.headingGray
+{
+	/*Programs Description */
+	color: #555753;
+	font: 10pt/16pt arial;
+	font-weight: bold;
+}
+#content p.Description
+{
+	color: #555753;
+	font: 10pt/16pt arial;
+}
+#content td.listHead
+{
+	/*Course#, Course Title, etc. */
+	color: #000000;
+	font-weight: bold;
+}
+
+
+
+/* Survey */
+
+#survey-content
+{
+	height: 700px;
+	line-height: 20px;
+	width: 100%;
+	z-index: 100;
+}
+#survey-content-banner
+{
+	background: #171516;
+	background-color: #171516;
+	width: 100%;
+}
+#survey-content-footer
+{
+	background: #171516;
+	background-color: #171516;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.survey-content-question
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 8pt;
+}
+.survey-content-alt-template
+{
+	background-color: Silver;
+}
+/* Flash Components */
+#navigationContent
+{
+	background-color: #171516;
+}
+/* Recipe Containers */
+div.recipe
+{
+	padding-bottom: 20px;
+	text-align: center;
+}
+div.recipe-title
+{
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-radius-bottomright: 5px;
+	-webkit-border-radius-topright: 5px;
+	border-color: #ffffff transparent transparent #ffffff;
+	border-style: solid;
+	border-width: 2px 2px 2px 5px;
+	margin: 0 auto;
+	width: 350px;
+}
+div.recipe-bar-right
+{
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-radius-bottomright: 5px;
+	-webkit-border-radius-topright: 5px;
+	border-color: #ffffff #ffffff transparent transparent;
+	border-style: solid;
+	border-width: 2px 2px 2px 5px;
+	margin: -30px auto;
+	padding: 0;
+	width: 200px;
+	text-align: right;
+	float: right;
+}
+
+div.recipe-title p
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	text-align: left;
+}
+p.recipe-title-upper
+{
+	color: #AF7964;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+div.recipe-bar-right p
+{
+}
+div.recipe-bar-container
+{
+	width: 600px;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: right;
+}
+/* Images */
+
+.images-main-placeholder
+{
+	width: 100%;
+	text-align: center;
+}
+.images-main-placeholder-left
+{
+	width: 100%;
+	text-align: left;
+	padding: 0 20px 10px 20px;
+}
+.images-main
+{
+	background: #000000;
+	padding: 5px 5px 5px 5px;	
+}
+
+/* HELPER CLASSES */
+
+.center
+{
+	text-align: center;
+}
+
+.float-left
+{
+	float: left;
+}
+
+.float-right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}

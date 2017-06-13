@@ -1,0 +1,36 @@
+
+.scl-icons { display: inline; }
+.scl-icons li {display: inline; }
+.scl-icons li a {display: inline; text-decoration: none; color: #4C4C4C;}
+.scl-icons li {vertical-align: middle;}
+.scl-icons li a img{border: none;}
+.hero-unit-gradient{
+background-image: linear-gradient(bottom, rgb(199,199,199) 34%, rgb(179,179,179) 59%, rgb(202,209,209) 84%);
+background-image: -o-linear-gradient(bottom, rgb(199,199,199) 34%, rgb(179,179,179) 59%, rgb(202,209,209) 84%);
+background-image: -moz-linear-gradient(bottom, rgb(199,199,199) 34%, rgb(179,179,179) 59%, rgb(202,209,209) 84%);
+background-image: -webkit-linear-gradient(bottom, rgb(199,199,199) 34%, rgb(179,179,179) 59%, rgb(202,209,209) 84%);
+background-image: -ms-linear-gradient(bottom, rgb(199,199,199) 34%, rgb(179,179,179) 59%, rgb(202,209,209) 84%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.34, rgb(199,199,199)),
+	color-stop(0.59, rgb(179,179,179)),
+	color-stop(0.84, rgb(202,209,209))
+);
+
+}
+/*
+.hero-unit-gradient:after{
+content: '';
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+opacity: .4;
+background-image: url("http://lanechasteen.com/images/pen-stripe.png");
+}
+*/

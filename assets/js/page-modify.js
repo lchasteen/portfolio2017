@@ -1,0 +1,33 @@
+/* 	 Author: Lane Chasteen
+	 Date:	 01/10/11
+	 
+	 These functions allows for advanced navigation and supports the store processes.	 
+*/
+
+
+function changeClass(toChange){			
+	
+	//document.getElementByClass("nav").firstChild.className="active";
+	//window.location = "index.php?page=" + toChange;
+	alert("hello");
+}
+////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////  END  ////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////
+// This function sets the text for the "message_panel" on the store_main.html page
+// basically you pass the elementID argument to this function to set the message
+// for the panel.
+/*
+function centeredPopup(url,winName,w,h,scroll){
+	var popupWindow = null;
+	LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+	TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+	settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+	popupWindow = window.open(url,winName,settings)
+}
+*/
+////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////  END  ////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////

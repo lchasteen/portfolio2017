@@ -1,0 +1,202 @@
+<!-- Author: University of Phoenix / B-Team: Added store navigation panel, store panel, and removed ad bar.
+	 Date:	 01/10/11
+	 
+	 This page uses Kudler's look and feel and represents the store features.
+	 
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <title>Kudler Fine Foods - Internet - Home</title>
+
+    <link rel="stylesheet" type="text/css" href="internet/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="internet/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="internet/css/greybox.css" />
+	
+    
+    <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+
+    <script type="text/javascript" src="scripts/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="scripts/greybox.js"></script>
+	
+	
+	<script type="text/javascript" src="scripts/store.js"></script>
+
+    <script type="text/javascript">
+        var GB_ANIMATION = true;
+
+        $(document).ready(function ()
+        {
+            $("#slideshow").cycle({
+                fx: 'fade',
+                pause: 1
+            });
+
+            $("a.greybox").click(function ()
+            {
+                var win = this.title || $(this).text() || this.href;
+                GB_show(win, this.href, 750, 600);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript"> </script>
+</head>
+<body onload="selectFirstMenuItem()">
+    
+    <div id="container">
+
+        <div id="metaLinks">
+            <a id="A1">INTERNET</a> | 
+            <a id="A2">INTRANET</a>
+        </div>
+
+        <div id="contentContainer">
+
+            <div id="header">
+                <a href="index_2.html">
+
+                    <img class="logomap" 
+                        src="internet/images/logo_map.gif" 
+                        alt="Kudler Fine Foods Home" />
+                </a>
+            </div>
+
+            <div id="main">
+                <div id="content">
+
+                    <div id="nav">
+                        <p class="nav">                            
+							<a id="homelink" href="index.html"><em class="em-current-colored">HOME</em></a> | 
+							<a id="storelink" href="store_main.html"><em class="em-current-colored">STORE</em></a> | 
+							<a id="cartlink" href="javascript:selectMenuItem('cart')"><em class="em-current-colored">CART</em></a> | 
+							<a>NEWS</a> | 
+							<a>ABOUT</a> | 
+							<a>LOCATIONS</a> | 
+							<a>SURVEY</a> | 
+							<a>TERMS AND CONDITIONS</a>
+
+                        </p>
+                    </div>
+                    
+                    <div id="main-content">
+						
+                        <!-- Content is replaced here for each page. -->
+						<div id="left_panel">						   
+							<div class="nav_head" onmouseover="mouseOverItemMenu('bakery')" onmouseout="clearMenuItem('bakery')"><a href="javascript:selectMenuItem('bakery')">Bakery</a>
+								<div id="bakery" onmouseover="mouseOverItemMenu('bakery')" onmouseout="clearMenuItem('bakery')">
+									<a href="javascript:selectMenuItem('croissant')">Croissants</a><br />
+									<a href="javascript:selectMenuItem('flat_bread')">Flat Bread</a><br />
+									<a href="javascript:selectMenuItem('fruit_tart')">Fruit Tarts</a><br />
+									<a href="javascript:selectMenuItem('table_loaves')">Table Loaves</a>											
+								</div>
+							</div>							
+							<div class="nav_head" onmouseover="mouseOverItemMenu('meat')" onmouseout="clearMenuItem('meat')"><a href="javascript:selectMenuItem('meat')">Meat and Seafood</a>
+								<div id="meat" onmouseover="mouseOverItemMenu('meat')" onmouseout="clearMenuItem('meat')">
+									<a href="javascript:selectMenuItem('beef')">Beef</a><br />
+									<a href="javascript:selectMenuItem('lamb');">Lamb</a><br />
+									<a href="javascript:selectMenuItem('poultry');">Poultry</a><br />									
+									<a href="javascript:selectMenuItem('seafood');">Seafood</a>											
+								</div>
+							</div>							
+							<div class="nav_head" onmouseover="mouseOverItemMenu('produce')" onmouseout="clearMenuItem('produce')"><a href="javascript:selectMenuItem('produce')">Produce</a>
+								<div id="produce" onmouseover="mouseOverItemMenu('produce')" onmouseout="clearMenuItem('produce')">
+									<a href="javascript:selectMenuItem('fruits')">Fruits</a><br />
+									<a href="javascript:selectMenuItem('vegetables')">Vegetables</a><br />
+									<a href="javascript:selectMenuItem('herbs')">Herbs and Spices</a>
+								</div>							
+							</div>							
+							<div class="nav_head" onmouseover="mouseOverItemMenu('dairy')" onmouseout="clearMenuItem('dairy')"><a href="javascript:selectMenuItem('dairy')">Cheese and Dairy</a>
+								<div id="dairy" onmouseover="mouseOverItemMenu('dairy')" onmouseout="clearMenuItem('dairy')">									
+									<a href="javascript:selectMenuItem('cheddar')">Cheddar</a><br />
+									<a href="javascript:selectMenuItem('colby')">Colby</a><br />
+									<a href="javascript:selectMenuItem('swiss')">Swiss</a><br />
+									<a href="javascript:selectMenuItem('specialty')">Specialty Cheeses</a>	
+								</div>
+							</div>
+			
+						</div>
+							
+							
+						<div id="right_panel">
+							<div id="bakery_panel">
+								<h4 class="item_head">Croissants</h4>
+									<div id="croissant"></div>
+								<h4 class="item_head">Flat Bread</h4>
+									<div id="flat_bread"></div>
+								<h4 class="item_head">Fruit Tarts</h4>
+									<div id="fruit_tart"></div>
+								<h4 class="item_head">Table Loaves</h4>								
+									<div id="table_loaves"></div>
+							</div>
+							<div id="meat_panel">
+								<h4 class="item_head">Beef</h4>
+									<div id="beef"></div>
+								<h4 class="item_head">Lamb</h4>
+									<div id="lamb"></div>								
+								<h4 class="item_head">Poultry</h4>
+									<div id="poultry"></div>
+								<h4 class="item_head">Seafood</h4>								
+									<div id="seafood"></div>
+							</div>
+							<div id="produce_panel">
+								<h4 class="item_head">Fruits</h4>
+									<div id="fruits"></div>
+								<h4 class="item_head">Vegetables</h4>
+									<div id="vegetables"></div>								
+								<h4 class="item_head">Herbs and Spices</h4>
+									<div id="herbs"></div>
+								
+							</div>
+							<div id="dairy_panel">			
+								<h4 class="item_head">Cheddar</h4>
+									<div id="cheddar"></div>
+								<h4 class="item_head">Colby</h4>
+									<div id="colby"></div>								
+								<h4 class="item_head">Swiss</h4>
+									<div id="swiss"></div>	
+								<h4 class="item_head">Specialty Cheeses</h4>
+									<div id="specialty"></div>	
+							</div>
+							<div id="cart">
+								<h4 class="item_head">Shopping Cart</h4>
+									<div id="items"></div>
+							</div>
+													
+						</div>
+                        
+						<!-- Content is replaced here for each page. -->
+							
+					</div>
+                </div>                        
+            </div>
+
+            <div id="footer">
+                <p>
+                    <a href="./internet/news.htm">NEWS</a> | 
+                    <a href="./internet/about.htm">ABOUT</a> | 
+                    <a href="./internet/locations.htm">LOCATIONS</a> | 
+                    <a href="./internet/survey.htm" class="greybox">SURVEY</a> | 
+                    <a href="./internet/terms.htm">TERMS AND CONDITIONS</a>
+
+                    <br />
+                    <br />
+                    © 2010 Apollo Group, Inc., Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+<!--Google Analytics Code -->
+<script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+<script type="text/javascript">
+		_uacct = "UA-1768756-3";
+		urchinTracker();
+	</script>
+
+</body>
+</html>
